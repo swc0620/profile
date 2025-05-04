@@ -52,13 +52,55 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in robotics, computer vision, and machine learning.
+                  I'm interested in robotics, particularly in robot learning and manipulation, computer vision, and machine learning. My research interests include enabling robots to perform dexterous manipulation in dynamic and complex environments, learning to perceive and interact with the world effectively, and optimizing task-dependent robot design for enhanced performance.
                 </p>
               </td>
             </tr>
           </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
+                    <source src="images/immimic.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <!-- <script type="text/javascript">
+                  function r2r_start() {
+                    document.getElementById('r2r_image').style.opacity = "1";
+                  }
+                  function r2r_stop() {
+                    document.getElementById('r2r_image').style.opacity = "0";
+                  }
+                  r2r_stop()
+                </script> -->
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle"><a href="https://sites.google.com/view/immimic">ImMimic: Cross-Domain Imitation from Human Videos via Mapping and Interpolation</a></span>
+                <br>
+                <i>Yangcen Liu*</i>,
+                <strong>Woo Chul Shin*</strong>,
+                <i>Yunhai Han</i>,
+                <i>Zhenyang Chen</i>,
+                <i>Harish Ravichandar</i>,
+                <i>Danfei Xu</i>,
+                <br>
+                <em>Under Review</em>, 2025
+                <br>
+                <a href="https://sites.google.com/view/immimic">project page</a>
+                <!-- /
+                <a href="https://arxiv.org/abs/2412.15211">arXiv</a> -->
+                <p></p>
+                <p>
+                  ImMimic is an embodiment-agnostic co-training framework that bridges the domain gap between large-scale human videos and limited robot demonstrations. It uses Dynamic Time Warping to map human hand poses to robot joints and applies MixUp interpolation to generate intermediate domains for smoother domain adaptation. Evaluations across two parallel-jaw grippers (Robotiq, Fin Ray) and two dexterous hands (Ability, Allegro) demonstrate that ImMimic significantly improves task success and execution smoothness.
+                </p>
+              </td>
+            </tr>
+
+
             <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
@@ -86,6 +128,7 @@
                 <i>Wonsuhk Jung</i>,
                 <strong>Woo Chul Shin</strong>, 
                 <i>Rohan Bansal</i>,
+                <i>Pierre Barroso</i>,
                 <i>Yu Hang He</i>,
                 <i>Yingyan Celine Lin</i>,
                 <i>Benjamin Joffe</i>,
@@ -126,7 +169,7 @@
                 </script> -->
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">MimicLabs: What Matters in Learning from Large-Scale Datasets for Robot Manipulation</span>
+                <span class="papertitle"><a href="https://robo-mimiclabs.github.io/pages/study.html">What Matters in Learning from Large-Scale Datasets for Robot Manipulation</a></span>
                 <br>
                 <i>Vaibhav Saxena*</i>,
                 <i>Matthew Bronars*</i>,
@@ -139,12 +182,12 @@
                 <br>
                 <em>ICLR</em>, 2025
                 <br>
-                <!-- <a href="https://mimiclabs-iclr.github.io/">project page</a> -->
+                <a href="https://robo-mimiclabs.github.io/pages/study.html">project page</a>
                 <!-- /
                 <a href="https://arxiv.org/abs/2412.15211">arXiv</a> -->
                 <p></p>
                 <p>
-                  We develop a data generation framework to procedurally emulate key sources of diversity in robot datasets. Using this framework, we generate large-scale datasets with controlled variations to analyze how collection diversity and retrieval strategies impact downstream policy learning.
+                  We develop MimicLabs, a data generation framework to procedurally emulate key sources of diversity in robot datasets. Using this framework, we generate large-scale datasets with controlled variations to analyze how collection diversity and retrieval strategies impact downstream policy learning.
                 </p>
               </td>
             </tr>
