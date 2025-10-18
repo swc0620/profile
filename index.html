@@ -62,13 +62,88 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in robotics, particularly in robot learning and dexterous manipulation. My research focuses on enabling robots to perform dexterous manipulation in dynamic and complex environments, learning to perceive and interact with the world effectively. A key aspect of my work involves learning from human video demonstrations to teach robots nuanced manipulation skills and intuitive interactions, bridging perception and action in real-world scenarios.
+                  I study <b>1) robot learning</b> for robots to acquire and generalize skills from human videos and demonstrations. My research focuses on <b>2) dexterous manipulation with tactile and force feedback</b>, making robots adapt to contact-rich interactions in dynamic environments. I want to develop <b>3) robot reasoning</b> systems that plan, compose, and adapt skills over long horizons, moving beyond imitation toward purposeful autonomy. Ultimately, my goal is to <b>"build good robots"</b> that can learn, think, and interact with humans in real-world environments.
                 </p>
               </td>
             </tr>
           </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='r2r_image'>
+                    <img src='images/egoengine.png' width=100%>
+                  </div>
+                </div>
+                <!-- <script type="text/javascript">
+                  function r2r_start() {
+                    document.getElementById('r2r_image').style.opacity = "1";
+                  }
+                  function r2r_stop() {
+                    document.getElementById('r2r_image').style.opacity = "0";
+                  }
+                  r2r_stop()
+                </script> -->
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle"><a href="https://egoengine.github.io/">EgoEngine: From Egocentric Human Videos to High-Fidelity Dexterous Robot Demonstrations</a></span>
+                <br>
+                <i>Shuo Cheng*</i>,
+                <i>Yangcen Liu*</i>,
+                <i>Yiran Yang</i>,
+                <i>Xinchen Yin</i>,
+                <strong>Woo Chul Shin</strong>, 
+                <i>Mengying Lin</i>,
+                <i>Danfei Xu</i>
+                <br>
+                <em>In Progress</em>
+                <br>
+                <a href="https://egoengine.github.io/">Project Website</a>
+                <p></p>
+                <p>
+                  EgoEngine is a powerful data engine that converts egocentric human videos into robot-executable demonstrations. By coupling an action branch (retargeting with refinforcement learning refinement) and a visual branch (arm-hand inpainting with robot rendering blending) under the same task, EgoEngine minimizes action and visual gaps to yield scalable, executable robot data.
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='r2r_image'>
+                    <img src='images/compositional_visual_planning.png' width=100%>
+                  </div>
+                </div>
+                <!-- <script type="text/javascript">
+                  function r2r_start() {
+                    document.getElementById('r2r_image').style.opacity = "1";
+                  }
+                  function r2r_stop() {
+                    document.getElementById('r2r_image').style.opacity = "0";
+                  }
+                  r2r_stop()
+                </script> -->
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle"><a href="https://comp-visual-planning.github.io/">Compositional Visual Planning via Inference-Time Diffusion Scaling</a></span>
+                <br>
+                <i>Yixin Zhang</i>,
+                <i>Yunhao Luo</i>,
+                <i>Utkarsh Aashu Mishra</i>,
+                <strong>Woo Chul Shin</strong>, 
+                <i>Yongxin Chen</i>,
+                <i>Danfei Xu</i>
+                <br>
+                <em>Under Review</em>
+                <br>
+                <a href="https://comp-visual-planning.github.io/">Project Website</a>
+                <p></p>
+                <p>
+                  Compositional Visual Planning via Inference-Time Diffusion Scaling is a training-free framework that extends diffusion models from short-horizon to long-horizon robot planning. Instead of averaging independently denoised segments—which leads to instability in noisy spaces—it enforces boundary consistency on Tweedie estimates through a combination of synchronous and asynchronous message passing across a chain-structured factor graph. This inference-time approach produces globally coherent plans and significantly improves generalization to unseen start–goal tasks across diverse simulation environments.
+                </p>
+              </td>
+            </tr>
+            
             <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
@@ -97,9 +172,13 @@
                 <br>
                 <em>CoRL 2025 <b>(Oral)</b></em>
                 <br>
-                <em>RSS 2025 Dex WS <b>(Spotlight)</b></em>
+                <em>CoRL H2R Workshop 2025 </em>
                 <br>
-                <a href="https://openreview.net/pdf/71eeb1380524067a776d1c563ac1a37bf0f94f98.pdf">Paper</a>
+                <em>RSS Dex Workshop 2025 <b>(Spotlight)</b></em>
+                <br>
+                <a href="https://www.youtube.com/live/rh2oxU1MCb0?si=IIKzoSivMLy-9NKp&t=2480">Oral Talk</a>
+                /
+                <a href="https://arxiv.org/pdf/2509.10952">Paper</a>
                 /
                 <a href="https://sites.google.com/view/immimic">Project Website</a>
                 <p></p>
@@ -220,13 +299,7 @@
                 <p>
                   <strong>Research Assistant, Georgia Tech</strong> <i> (Fall 2024 -- Present)</i>
                   </br>
-                  <i>Atlanta, GA</i>
-                  </br>
-                  Lab: <a href="https://rl2.cc.gatech.edu/">Robot Learning and Reasoning Lab</a>
-                  </br>
-                  Advisor: <a href="https://faculty.cc.gatech.edu/~danfei/">Danfei Xu</a>
-                  </br>
-                  Collaborator: <a href="https://y8han.github.io/" >Yunhai Han</a> from <a href="https://star-lab.cc.gatech.edu/" >STAR Lab</a>
+                  <i>Atlanta, GA</i> / Lab: <a href="https://rl2.cc.gatech.edu/">Robot Learning and Reasoning Lab</a> / Advisor: <a href="https://faculty.cc.gatech.edu/~danfei/">Danfei Xu</a> / Collaborator: <a href="https://y8han.github.io/" >Yunhai Han</a> from <a href="https://star-lab.cc.gatech.edu/" >STAR Lab</a>
                 </p>
                 
                 <p>
@@ -275,6 +348,11 @@
                 <p>
                   <strong>CS4644/CS7643, Deep Learning, Georgia Tech</strong>
                   </br>
+                  Spring 2026, Graduate Teaching Assistant
+                </p>
+                <p>
+                  <strong>CS4644/CS7643, Deep Learning, Georgia Tech</strong>
+                  </br>
                   Fall 2025, Graduate Teaching Assistant
                 </p>
                 <p>
@@ -307,18 +385,29 @@
                 <h2>Embodiment Experience</h2>
                 RobotiQ 2F-85 Gripper
                 </br>
-                Fin Ray Gripper
+                Fin Ray Gripper (UMI Gripper)
                 </br>
-                PSYONIC Ability Hand
+                Psyonic Ability Hand
                 </br>
                 Allegro AH V4 Hand
                 </br>
                 Franka Emika Panda Arm
                 </br>
                 Rainbow Robotics RB-Y1
+                <br>
+                Robotera Xhand1
+                <br>
+                Mindrove Armband
               </td>
             </tr>
           </tbody></table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            <a href="https://jonbarron.info/">Template Source</a>
+          </p>
         </td>
       </tr>
     </tbody>
